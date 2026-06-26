@@ -1,0 +1,95 @@
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 2rem;
+  background: rgba(11, 26, 46, 0.75);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-subtle);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 1.3rem;
+  letter-spacing: -0.02em;
+}
+.nav-brand span { color: var(--accent); }
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.nav-links a {
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: 0.2s;
+  border-bottom: 2px solid transparent;
+}
+.nav-links a:hover { color: #fff; border-color: var(--accent); }
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.mic-btn {
+  background: var(--card-bg);
+  border: 1px solid var(--border-subtle);
+  border-radius: 40px;
+  padding: 0.4rem 0.8rem;
+  color: var(--text-light);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 0.9rem;
+}
+.mic-btn:hover { background: var(--accent-glow); border-color: var(--accent); }
+.mic-btn.listening { border-color: #ff6b6b; box-shadow: 0 0 12px #ff6b6b55; }
+
+.lang-toggle {
+  background: var(--card-bg);
+  border: 1px solid var(--border-subtle);
+  border-radius: 30px;
+  padding: 0.3rem 0.7rem;
+  color: var(--text-light);
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.footer {
+  border-top: 1px solid var(--border-subtle);
+  padding: 2rem 2rem 1.5rem;
+  background: rgba(0,0,0,0.2);
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}

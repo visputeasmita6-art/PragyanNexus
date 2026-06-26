@@ -1,0 +1,156 @@
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  #root {
+    width: 100%;
+    border-inline: none;
+  }
+  
+  .main-content {
+    padding: 1.5rem;
+  }
+
+  .hero .framework {
+    width: 36px;
+    height: 36px;
+  }
+
+  .hero .vite {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+    padding: 0.8rem 1rem;
+  }
+  
+  .nav-links {
+    justify-content: center;
+    gap: 0.8rem;
+  }
+  
+  .nav-links a {
+    font-size: 0.85rem;
+  }
+  
+  .nav-actions {
+    justify-content: center;
+  }
+  
+  .main-content {
+    padding: 1rem;
+  }
+  
+  h1 {
+    font-size: 30px !important;
+    margin: 16px 0 !important;
+  }
+  
+  h2 {
+    font-size: 20px !important;
+  }
+  
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .card {
+    padding: 16px;
+  }
+  
+  .footer {
+    padding: 1.5rem 1rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  #next-steps {
+    padding: 24px 16px;
+    gap: 24px;
+  }
+
+  #next-steps > div {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .hero .base {
+    width: 120px;
+    height: 126px;
+  }
+
+  .hero .framework {
+    width: 30px;
+    height: 30px;
+    right: 22%;
+  }
+
+  .hero .vite {
+    width: 30px;
+    height: 30px;
+    left: 22%;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links {
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .nav-links a {
+    font-size: 0.75rem;
+    padding: 4px 8px;
+  }
+  
+  .mic-btn {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.6rem;
+  }
+  
+  .lang-toggle {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+  }
+  
+  .nav-brand {
+    font-size: 1rem;
+  }
+  
+  .main-content {
+    padding: 0.75rem;
+  }
+  
+  .footer {
+    padding: 1rem 0.75rem 0.75rem;
+    font-size: 0.7rem;
+  }
+
+  .hero .base {
+    width: 90px;
+    height: 95px;
+  }
+
+  .hero .framework {
+    width: 24px;
+    height: 24px;
+    right: 24%;
+    top: 12%;
+  }
+
+  .hero .vite {
+    width: 24px;
+    height: 24px;
+    left: 24%;
+    bottom: 18%;
+  }
+
+  #center .counter {
+    font-size: 0.85rem;
+    padding: 4px 12px;
+  }
+}
